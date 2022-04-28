@@ -24,6 +24,9 @@ try{
     res.send(services);
     })
 
+    app.get('/hero',(req,res)=>{
+        res.send('I love You.')
+    })
 
     app.post('/Student',async(req,res)=>{
         const newUser = req.body;
